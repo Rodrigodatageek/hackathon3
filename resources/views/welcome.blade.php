@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>St. Hector's Veterinary Clinic</title>
+    <link rel="stylesheet" href="/css/style.css">
+    
 </head>
 <body>
-    <h1>Welcome to St.</h1>
+    @include('../includes/header')
+    <h1>Welcome<br>on our<br>St. Hector's Veterinary Clinic</h1>
+
+    
 
     {{-- // seacrh buttons owner 
     // seacrh buttons pet
