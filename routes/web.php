@@ -19,6 +19,7 @@ Route::get('/', function () {
 });
 
 Route::get('/animals/search', 'AnimalController@search');
+Route::get('animals/index', 'AnimalController@listAnimals');
 
 Route::get('/owners/results', 'AnimalController@search');
 

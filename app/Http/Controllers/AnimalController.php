@@ -37,7 +37,10 @@ class AnimalController extends Controller
 
     public function listAnimals()
         {
-            
+            $animals = Animal::orderBy('name', 'asc')->get();
+
+            // dd($animals);
+            return view('animals.index', compact('animals'));
         }
     
 }
