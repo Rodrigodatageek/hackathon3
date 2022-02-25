@@ -10,7 +10,7 @@ class OwnerController extends Controller
 
     public function redirect()
     {
-       
+    
         view('../owner');
     }
 
@@ -32,4 +32,6 @@ class OwnerController extends Controller
     //         ]
     //     );
     // }
+
+    
 }

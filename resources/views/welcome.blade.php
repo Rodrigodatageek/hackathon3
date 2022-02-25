@@ -24,9 +24,9 @@
           <label for="pet" class="placeholder">Search by Pet</label>
         </div>
         <div class="input-container ic2">
-          <input name="allpets" id="allpets" class="input" type="text" placeholder=" " />
-          <div class="cut cut-short"></div>
-          <label for="allpets" class="placeholder">List all pets</>
+        <input name="allpets" id="allpets" class="input" type="text" placeholder=" " />
+        <div class="cut cut-short"></div>
+        <label for="allpets" class="placeholder">List all pets</>
         </div>
         <button type="text" class="submit">submit</button>
       </div>
