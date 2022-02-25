@@ -7,11 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-
     <h1>Welcome to St.</h1>
 
-    <form action="{{action('MovieController@delete', ['id' => $movie->id])}}">
-    <button>Search Owner</button>
+    <form action="{{action('OwnerController@redirect', ['id' => $movie->id])}}">
+    @csrf 
+    <button type="submit">Search Owner</button>
     </form>
 
     <form action="">
