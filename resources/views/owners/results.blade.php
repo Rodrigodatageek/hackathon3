@@ -7,15 +7,16 @@
     <title>Results</title>
 </head>
 <body>
-    
-    @if($animals)
+
+   
+    @if($owners)
     <ul>
-        @foreach($animals as $animal)
-            <li>{{$animal->name}}</li>
+        @foreach($owners as $owner)
+            <li>{{$owner->surname}}</li>
         @endforeach
     </ul>
     @endif
     <a href="/">Go back to the welcome page</a>
-
+    
 </body>
 </html>

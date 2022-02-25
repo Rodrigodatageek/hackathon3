@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Animal;
+use App\Models\Owner;
+
 use Illuminate\Http\Request;
 
 class AnimalController extends Controller
@@ -16,13 +19,13 @@ class AnimalController extends Controller
     {
         $animalName = $request->input('pet');
         $ownerName = $request->input('owner');
-
-        if(isset ($animalName)) {
+        //dd($animalName);
+        if(isset($animalName)) {
             $animals = Animal::where('name', 'like', '%'.$animalName.'%')->orderBy('name', 'asc')->get();
-            return view('animas.search',compact('animals'));
-        } elseif (issset($ownerName)) {
-            $owners = Owner::where('surname', 'like', '%'.$ownerName.'%')->orderBy('name', 'asc')->get();
-            return view('owners.search',compact('owners'));
+            return view('animals.results',compact('animals'));
+        } elseif (isset($ownerName)) {
+            $owners = Owner::where('surname', 'like', '%'.$ownerName.'%')->orderBy('surname', 'asc')->get();
+            return view('owners.results',compact('owners'));
         }
         
 

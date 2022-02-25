@@ -9,7 +9,7 @@
     
 </head>
 <body>
-    <form action="">
+    <form action="/animals/search" method="get">
         <div class="form">
         <div class="title">Welcome</div>
         <div class="subtitle">Pet Clinic</div>
@@ -31,6 +31,8 @@
         <button type="text" class="submit">submit</button>
       </div>
     </form>
+
+    
 
 </body>
 </html>
