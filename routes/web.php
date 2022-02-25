@@ -18,4 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/', 'OwnerController@redirect');
+Route::get('/owner', 'OwnerController@redirect');
