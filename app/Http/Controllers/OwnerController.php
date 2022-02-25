@@ -10,7 +10,8 @@ class OwnerController extends Controller
 
     public function redirect()
     {
-        //dd('hi');
+    
+        view('../owner');
     }
 
     // public function index()
@@ -31,4 +32,6 @@ class OwnerController extends Controller
     //         ]
     //     );
     // }
+
+    
 }

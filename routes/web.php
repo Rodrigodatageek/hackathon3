@@ -18,4 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/', 'OwnerController@redirect');
+Route::get('/animals/search', 'AnimalController@search');
+Route::get('/owner', 'OwnerController@redirect');
