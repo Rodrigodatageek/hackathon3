@@ -32,6 +32,13 @@
       </div>
     </form>
 
+    <div class="input-container ic2">
+      
+      <div class="cut cut-short">
+      <a href="/animals/index">List all of the animals</a>
+    </div>
+    </div>
+
     
 
 </body>
