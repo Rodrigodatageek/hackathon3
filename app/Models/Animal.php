@@ -11,10 +11,10 @@ class Animal extends Model
 
     public function images()
     {
-        return $this->hasOne(Image::class);
+        return $this->hasOne(Image::class, 'id');
     }
 
-    public function owners()
+    public function owner()
     {
         return $this->belongsTo(Owner::class);
     }

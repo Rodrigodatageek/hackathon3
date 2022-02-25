@@ -36,11 +36,19 @@ class AnimalController extends Controller
     }
 
     public function listAnimals()
-        {
+    {
             $animals = Animal::orderBy('name', 'asc')->get();
 
             // dd($animals);
             return view('animals.index', compact('animals'));
-        }
+    }
+
+    public function detail($id)
+    {
+        $animal = Animal::where('id', $id)->get();
+
+        return view('animals.detail', compact('animal'));
+        
+    }
     
 }

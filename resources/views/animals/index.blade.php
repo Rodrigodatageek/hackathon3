@@ -10,10 +10,10 @@
     
     <a href="/">Go back to the welcome page</a>
     <br>
-    
+
     <ul>
         @foreach($animals as $animal)
-            <li>{{$animal->name}}</li>
+            <li><a href="/animals/detail/{{$animal->id}}">{{$animal->name}}</a>, owned by <a href="/owners/detail/{{$animal->owner->id}}">{{ $animal->owner->first_name }} {{ $animal->owner->surname }}</a></li>
         @endforeach
     </ul>
     
