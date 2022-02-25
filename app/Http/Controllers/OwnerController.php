@@ -10,7 +10,7 @@ class OwnerController extends Controller
 
     public function redirect()
     {
-        dd('hi');
+        //dd('hi');
     }
 
     // public function index()

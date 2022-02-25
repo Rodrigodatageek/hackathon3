@@ -13,7 +13,7 @@
     <h1>Welcome<br>on our<br>St. Hector's Veterinary Clinic</h1>
 
     
-
+    
     <form action="{{action('OwnerController@redirect', ['id' => $movie->id])}}">
     @csrf 
     <button type="submit">Search Owner</button>
