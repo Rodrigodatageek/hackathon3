@@ -7,11 +7,13 @@
     <title>Owner Detail</title>
 </head>
 <body>
-    <h2>Owner's name {{$owner->first_name}} {{$owner->surname}}</h2>
-    <p>Address: {{$owner->address}}</p>
-    <p>Phone No: {{$owner->phone}}</p>
+    <h2>Owner's name {{$owner[0]->first_name}} {{$owner[0]->surname}}</h2>
+    <p>Address: {{$owner[0]->address}}</p>
+    <p>Phone No: {{$owner[0]->phone}}</p>
     <p>Pets:</p>
-    
+    @foreach($owner[0]->animals as $animal)
+    <li>{{$animal->name}}</li>
+    @endforeach
     
 </body>
 </html>

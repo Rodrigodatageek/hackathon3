@@ -37,7 +37,7 @@ class OwnerController extends Controller
     public function detail($id)
     {
         $owner = Owner::where('id', $id)->get();
-
+        // dd($owner[0]->animals);
         return view('owners.detail', compact('owner'));
     }
 }
