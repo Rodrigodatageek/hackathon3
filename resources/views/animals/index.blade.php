@@ -10,6 +10,7 @@
     
     <a href="/">Go back to the welcome page</a>
     <br>
+    
     <ul>
         @foreach($animals as $animal)
             <li>{{$animal->name}}</li>

@@ -26,6 +26,3 @@ Route::get('/owners/results', 'AnimalController@search');
 
 Route::get('/owner', 'OwnerController@redirect');
 
-Route::get('/animals/{id}/edit', 'AnimalController@edit');
-Route::put('/animals/{id}', 'AnimalController$update');
-Route::delete('animals/{id}/delete', 'AnimalController@delete');
