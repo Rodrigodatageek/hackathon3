@@ -12,7 +12,7 @@
     <form action="/animals/search" method="get">
         <div class="form">
         <div class="title">Welcome</div>
-        <div class="subtitle">Pet Clinic</div>
+        <div class="subtitle">St. Hector's veterinary clinic</div>
         <div class="input-container ic1">
           <input name='owner' id="owner" class="input" type="text" placeholder=" " />
           <div class="cut"></div>
@@ -23,20 +23,13 @@
           <div class="cut"></div>
           <label for="pet" class="placeholder">Search by Pet</label>
         </div>
-        <div class="input-container ic2">
-        <input name="allpets" id="allpets" class="input" type="text" placeholder=" " />
-        <div class="cut cut-short"></div>
-        <label for="allpets" class="placeholder">List all pets</>
-        </div>
+        
         <button type="text" class="submit">submit</button>
-      </div>
+        <button onclick="window.location.href='/animals/index'"type="button" class="redirect">List all pets</button>
+        </div>
+        </div>
+        </div>
     </form>
-
-    <div class="input-container ic2">
-      
-      <div class="cut cut-short">
-      <a href="/animals/index">List all of the animals</a>
-    </div>
     </div>
 
     
