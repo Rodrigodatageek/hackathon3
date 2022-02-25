@@ -7,8 +7,21 @@
     <title>Document</title>
 </head>
 <body>
+
     <h1>Welcome to St.</h1>
 
+    <form action="{{action('MovieController@delete', ['id' => $movie->id])}}">
+    <button>Search Owner</button>
+    </form>
+
+    <form action="">
+    <button>Search Pet</button>
+    </form>
+
+    <form action="">
+        <button>List all pets</button>
+    </form>
+    
     {{-- // seacrh buttons owner 
     // seacrh buttons pet
     // list pets
