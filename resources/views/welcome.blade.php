@@ -7,6 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    Hello
+    <h1>Welcome to St.</h1>
+
+    {{-- // seacrh buttons owner 
+    // seacrh buttons pet
+    // list pets
+
+    each of them will redirecct to specific controller --}}
+
+
 </body>
 </html>
