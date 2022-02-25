@@ -14,6 +14,19 @@
 
     
 
+    <form action="{{action('OwnerController@redirect', ['id' => $movie->id])}}">
+    @csrf 
+    <button type="submit">Search Owner</button>
+    </form>
+
+    <form action="">
+    <button>Search Pet</button>
+    </form>
+
+    <form action="">
+        <button>List all pets</button>
+    </form>
+    
     {{-- // seacrh buttons owner 
     // seacrh buttons pet
     // list pets
