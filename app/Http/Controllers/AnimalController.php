@@ -6,20 +6,35 @@ use Illuminate\Http\Request;
 
 class AnimalController extends Controller
 {
-    public function search()
+
+    public function redirect()
     {
-        
-        $results = $_GET ? DB::select("
-        SELECT *
-        FROM `movies`
-        WHERE `name` LIKE ?
-        ", [
-            "%{$_GET['search']}%"
-        ]) : [];
-        //dump($results);
-        return view('movies.search',
-        [
-            'movie_like' => $results
-        ]);
+        return view('animals.search');
     }
+
+    public function search(Request $request)
+    {
+        $animalName = $request->input('pet');
+        $ownerName = $request->input('owner');
+
+        if(isset ($animalName)) {
+            $animals = Animal::where('name', 'like', '%'.$animalName.'%')->orderBy('name', 'asc')->get();
+            return view('animas.search',compact('animals'));
+        } elseif (issset($ownerName)) {
+            $owners = Owner::where('surname', 'like', '%'.$ownerName.'%')->orderBy('name', 'asc')->get();
+            return view('owners.search',compact('owners'));
+        }
+        
+
+        return view('welcome');
+        
+        
+        
+    }
+
+    public function listAnimals()
+        {
+            
+        }
+    
 }
